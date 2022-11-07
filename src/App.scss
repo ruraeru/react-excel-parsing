@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Bebas Neue", cursive;
+  font-family: "Noto Sans", sans-serif;
+
+  font-size: 15px;
+  //   line-height: 1.6em;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  #table {
+    td:nth-child(2),
+    td:nth-child(6),
+    td:nth-child(7),
+    td:nth-child(10),
+    th:nth-child(2),
+    th:nth-child(6),
+    th:nth-child(7),
+    th:nth-child(10) {
+      display: none;
+    }
+    td,
+    th {
+      width: 10%;
+      line-height: 1.1em;
+      font-size: 11px;
+    }
+  }
+}
+
+#table {
+  text-align: center;
+  //   width: 1200px;
+  width: 80%;
+  background-color: #fff;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  overflow: hidden;
+
+  margin-top: 20px;
+  margin-bottom: 50px;
+  tr > td:nth-child(3) {
+    width: 12%;
+  }
+  tr > td:nth-child(9) {
+    color: green;
+    font-weight: 500;
+  }
+
+  tr {
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    &:last-child {
+      border: none;
+    }
+    &:nth-child(odd) {
+      background-color: #ddd;
+    }
+  }
+
+  th,
+  td {
+    padding: 12px;
+    text-align: center;
+  }
+
+  th {
+    background-color: dodgerblue;
+    color: #fff;
+  }
+
+  td {
+    width: 8%;
+  }
+  // tr {
+  //   border-bottom: solid 1px black;
+  // }
+  // td {
+  //   border: solid 1px black;
+
+  //   width: 100px;
+  //   height: 20px;
+  //   padding-left: 5px;
+  //   padding-right: 5px;
+  // }
+}
